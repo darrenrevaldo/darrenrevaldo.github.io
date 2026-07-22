@@ -26,16 +26,17 @@
 </head>
 
 <body class="font-sans text-appleDark antialiased bg-white">
-    <!-- ================= HERO SECTION ================= -->
-    <section class="min-h-screen flex items-center justify-between px-8 md:px-24 py-20">
+    <!-- ================= HERO SECTION  ================= -->
+    <section class="min-h-screen flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-0 px-8 md:px-24 py-20 pt-32 md:pt-20">
+
         <!-- Konten Teks Kiri -->
-        <div class="max-w-2xl">
+        <div class="max-w-2xl text-center md:text-left">
             <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest mb-4">
-                Mahasiswa S1 Sistem Informasi - Universitas Dian Nuswantoro
+                Information Systems Student - Dian Nuswantoro University
             </p>
 
-            <h1 class="text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6 text-appleDark">
-                Merancang solusi melalui kode, desain, dan strategi.
+            <h1 class="text-4xl md:text-6xl font-bold tracking-tight leading-tight mb-6 text-appleDark">
+                Crafting solutions through code, design, and strategy.
             </h1>
 
             <p class="text-lg text-gray-500 leading-relaxed mb-10 max-w-xl">
@@ -44,20 +45,17 @@
                 I continuously improve my technical skills by developing personal projects and participating in collaborative software development.
             </p>
 
-            <!-- Tombol CTA -->
-            <div class="flex gap-4">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a href="#portfolio" class="bg-appleBlue hover:bg-blue-600 text-white px-8 py-3.5 rounded-full font-medium transition-colors duration-300">
                     Projects
                 </a>
             </div>
         </div>
 
-        <!-- Visual Kanan (Bisa diganti Memoji / Avatar) -->
-        <div class="hidden md:block">
-            <!-- Kotak abu-abu ini sebagai placeholder, ganti <img> src-nya nanti -->
-            <img src="assets/drnn.jpeg" alt="Foto Profil atau Memoji" class="w-96 h-96 object-cover rounded-3xl shadow-xl">
+        <!-- Visual Kanan -->
+        <div class="w-full flex justify-center md:w-auto">
+            <img src="assets/drnn.jpeg" alt="Foto Profil" class="w-64 h-64 md:w-96 md:h-96 object-cover rounded-[2rem] md:rounded-[3rem] shadow-xl">
         </div>
-
     </section>
 
     <section id="portfolio" class="px-8 md:px-24 py-24 bg-appleGray">
