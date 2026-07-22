@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Information Systems</title>
+
+    <!-- Memanggil Tailwind CSS langsung dari CDN untuk eksperimen cepat -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Konfigurasi warna khusus (Apple Blue) di Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        appleBlue: '#0071e3',
+                        appleDark: '#1d1d1f',
+                        appleGray: '#f5f5f7'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans text-appleDark antialiased bg-white">
+    <!-- ================= HERO SECTION ================= -->
+    <section class="min-h-screen flex items-center justify-between px-8 md:px-24 py-20">
+        <!-- Konten Teks Kiri -->
+        <div class="max-w-2xl">
+            <p class="text-gray-400 text-sm font-semibold uppercase tracking-widest mb-4">
+                Mahasiswa S1 Sistem Informasi - Universitas Dian Nuswantoro
+            </p>
+
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight leading-tight mb-6 text-appleDark">
+                Merancang solusi melalui kode, desain, dan strategi.
+            </h1>
+
+            <p class="text-lg text-gray-500 leading-relaxed mb-10 max-w-xl">
+                Information Systems undergraduate passionate about solving real-world problems through technology.
+                I enjoy building web applications, exploring backend engineering, and learning AI.
+                I continuously improve my technical skills by developing personal projects and participating in collaborative software development.
+            </p>
+
+            <!-- Tombol CTA -->
+            <div class="flex gap-4">
+                <a href="#portfolio" class="bg-appleBlue hover:bg-blue-600 text-white px-8 py-3.5 rounded-full font-medium transition-colors duration-300">
+                    Projects
+                </a>
+            </div>
+        </div>
+
+        <!-- Visual Kanan (Bisa diganti Memoji / Avatar) -->
+        <div class="hidden md:block">
+            <!-- Kotak abu-abu ini sebagai placeholder, ganti <img> src-nya nanti -->
+            <img src="assets/drnn.jpeg" alt="Foto Profil atau Memoji" class="w-96 h-96 object-cover rounded-3xl shadow-xl">
+        </div>
+
+    </section>
+
+    <section id="portfolio" class="px-8 md:px-24 py-24 bg-appleGray">
+        <h3 class="text-5xl md:text-4xl font-bold tracking-tight leading-tight mb-6 text-appleDark text-center">
+            Projects
+        </h3>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+
+            <!-- Digital Guest Book -->
+            <div onclick="openModal('modal-bukutamu')" class="bg-white p-10 rounded-[24px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group">
+
+                <span class="text-xs font-bold text-appleBlue uppercase tracking-wider">
+                    Web Development
+                </span>
+
+                <h3 class="text-2xl font-bold mt-3 mb-2 text-appleDark group-hover:text-appleBlue transition-colors">
+                    Digital Guest Book
+                </h3>
+
+                <p class="text-gray-500 line-clamp-2">
+                    A web-based digital guest book that allows visitors to submit their information and messages while providing a real-time view of guest entries.
+                </p>
+
+                <p class="mt-6 text-appleBlue font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Project <span aria-hidden="true">&rarr;</span>
+                </p>
+            </div>
+
+
+            <!-- Campus Clinic Information System -->
+            <div onclick="openModal('modal-poliklinik')" class="bg-white p-10 rounded-[24px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group">
+
+                <span class="text-xs font-bold text-appleBlue uppercase tracking-wider">
+                    Full-Stack Web Development
+                </span>
+
+                <h3 class="text-2xl font-bold mt-3 mb-2 text-appleDark group-hover:text-appleBlue transition-colors">
+                    Campus Clinic Information System
+                </h3>
+
+                <p class="text-gray-500 line-clamp-2">
+                    A web-based system designed to digitize patient administration and streamline clinic operations using PHP and MySQL.
+                </p>
+
+                <p class="mt-6 text-appleBlue font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Project <span aria-hidden="true">&rarr;</span>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ================= MODAL / POPUP SECTION ================= -->
+
+
+    <!-- Digital Guest Book Modal -->
+    <div id="modal-bukutamu" class="hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-10 relative shadow-2xl transform scale-95 transition-transform duration-300">
+
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-bukutamu')" class="absolute top-6 right-6 text-gray-400 hover:text-black bg-gray-100 p-2 rounded-full transition-colors">
+
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+
+
+            <h3 class="text-3xl font-bold text-appleDark mb-6">
+                Digital Guest Book
+            </h3>
+
+
+            <div class="space-y-6 text-gray-600">
+
+                <!-- Overview -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Project Overview
+                    </h4>
+
+                    <p>
+                        The Digital Guest Book is an interactive web application designed to digitally record visitor information and messages.
+                        It features a user-friendly form for visitors to submit their name, email, and message, along with a guest entry table that displays submitted data in real time.
+                        Each entry is automatically recorded with a timestamp showing the date and time of submission.
+                    </p>
+                </div>
+
+
+                <!-- Motivation -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Why I Built It
+                    </h4>
+
+                    <p>
+                        Traditional guest books that rely on physical records can be inefficient, difficult to search, and vulnerable to data loss or damage.
+                        This project was developed to digitize the guest registration process, making visitor records more organized, centralized, and accessible while providing a more modern user experience.
+                    </p>
+                </div>
+
+
+                <!-- Tech Stack -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Tech Stack & Tools
+                    </h4>
+
+                    <div class="flex flex-wrap gap-2 mt-2">
+
+                        <span class="bg-blue-50 text-appleBlue px-3 py-1 rounded-full text-sm font-medium">
+                            HTML / CSS
+                        </span>
+
+                        <span class="bg-blue-50 text-appleBlue px-3 py-1 rounded-full text-sm font-medium">
+                            PHP
+                        </span>
+
+                        <span class="bg-blue-50 text-appleBlue px-3 py-1 rounded-full text-sm font-medium">
+                            MySQL
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Campus Clinic Information System Modal -->
+    <div id="modal-poliklinik" class="hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-10 relative shadow-2xl transform scale-95 transition-transform duration-300">
+
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-poliklinik')" class="absolute top-6 right-6 text-gray-400 hover:text-black bg-gray-100 p-2 rounded-full transition-colors">
+
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+
+
+            <h3 class="text-3xl font-bold text-appleDark mb-6">
+                Campus Clinic Information System
+            </h3>
+
+
+            <div class="space-y-6 text-gray-600">
+
+                <!-- Overview -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Project Overview
+                    </h4>
+
+                    <p>
+                        The Campus Clinic Information System is a web-based application designed to support the management of healthcare services within a university environment.
+                        The system provides comprehensive database management functionality, including patient registration, examination scheduling, and digital medical record management.
+                    </p>
+                </div>
+
+
+                <!-- Motivation -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Why I Built It
+                    </h4>
+
+                    <p>
+                        Manual healthcare administration can slow down service processes and make it difficult to manage and track patient records.
+                        This project was developed to digitize clinic operations, making administrative workflows more efficient, structured, and easier to manage.
+                        It also served as a practical implementation of relational database design and CRUD operations for managing dynamic operational data.
+                    </p>
+                </div>
+
+
+                <!-- Tech Stack -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Tech Stack & Tools
+                    </h4>
+
+                    <div class="flex flex-wrap gap-2 mt-2">
+
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            HTML / CSS
+                        </span>
+
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            PHP
+                        </span>
+
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            MySQL
+                        </span>
+
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            JavaScript
+                        </span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section id="skills" class="px-8 md:px-24 py-24 bg-appleGray">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold tracking-tight mb-16 text-appleDark">
+                Skills
+            </h2>
+
+            <!-- Flex Container: justify-center memastikan baris yang tidak penuh tetap di tengah -->
+            <div class="flex flex-wrap justify-center gap-6 md:gap-8">
+
+                <!-- HTML5 -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="w-full h-full object-contain">
+                </div>
+
+                <!-- CSS3 -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS3" class="w-full h-full object-contain">
+                </div>
+
+                <!-- PHP -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" class="w-full h-full object-contain">
+                </div>
+
+                <!-- Laravel -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" class="w-full h-full object-contain">
+                </div>
+
+                <!-- MySQL -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" class="w-full h-full object-contain">
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" class="w-full h-full object-contain">
+                </div>
+
+                <!-- C++ -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" alt="C++" class="w-full h-full object-contain">
+                </div>
+
+                <!-- Git -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="w-full h-full object-contain">
+                </div>
+
+                <!-- Figma -->
+                <div class="bg-white w-28 h-28 md:w-32 md:h-32 rounded-[24px] shadow-sm border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex items-center justify-center p-6 cursor-default">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="Figma" class="w-full h-full object-contain">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BACK TO TOP BUTTON ================= -->
+    <button id="backToTopBtn" onclick="scrollToTop()" class="fixed bottom-8 right-8 md:bottom-10 md:right-10 z-50 bg-appleDark/90 backdrop-blur-md text-white p-4 rounded-full shadow-2xl opacity-0 translate-y-10 pointer-events-none transition-all duration-500 hover:bg-black hover:scale-110">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+    <script src="script.js"></script>
+</body>
+
+</html>

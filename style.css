@@ -1,0 +1,58 @@
+/* Menggunakan tumpukan font standar Apple */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+}
+
+.hero-section {
+  background-color: #ffffff; /* Latar belakang putih bersih murni */
+  color: #1d1d1f; /* Warna abu-abu sangat gelap khas teks Apple, bukan hitam pekat */
+}
+
+.greeting {
+  font-size: 0.9rem;
+  color: #86868b;
+  text-transform: uppercase; /* Huruf kapital semua untuk kesan modern */
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: -0.05rem; /* Jarak antar huruf dirapatkan sedikit */
+  line-height: 1.05;
+  margin-bottom: 25px;
+  max-width: 90%;
+}
+
+.summary {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #515154;
+  margin-bottom: 40px;
+}
+
+/* Tombol ala antarmuka macOS/iOS */
+.btn-primary {
+  background-color: #0071e3; /* Biru khas Apple */
+  color: white;
+  border: none;
+  border-radius: 980px; /* Membuat tombol berbentuk pil sempurna */
+  padding: 14px 28px;
+}
+
+.btn-primary:hover {
+  background-color: #0077ed;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+  border-radius: 980px;
+  padding: 14px 28px;
+}
