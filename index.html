@@ -67,19 +67,15 @@
 
             <!-- Digital Guest Book -->
             <div onclick="openModal('modal-bukutamu')" class="bg-white p-10 rounded-[24px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group">
-
                 <span class="text-xs font-bold text-appleBlue uppercase tracking-wider">
                     Web Development
                 </span>
-
                 <h3 class="text-2xl font-bold mt-3 mb-2 text-appleDark group-hover:text-appleBlue transition-colors">
                     Digital Guest Book
                 </h3>
-
                 <p class="text-gray-500 line-clamp-2">
                     A web-based digital guest book that allows visitors to submit their information and messages while providing a real-time view of guest entries.
                 </p>
-
                 <p class="mt-6 text-appleBlue font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
                     View Project <span aria-hidden="true">&rarr;</span>
                 </p>
@@ -106,165 +102,260 @@
                 </p>
             </div>
 
+            <!-- Digital Pencatatan Barang -->
+            <div onclick="openModal('modal-pencatatan')" class="bg-white p-10 rounded-[24px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group">
+                <span class="text-xs font-bold text-appleBlue uppercase tracking-wider">
+                    INVENTORY MANAGEMENT SYSTEM
+                </span>
+
+                <h3 class="text-2xl font-bold mt-3 mb-2 text-appleDark group-hover:text-appleBlue transition-colors">
+                    Material Stock Management System
+                </h3>
+
+                <p class="text-gray-500 line-clamp-2">
+                    A web-based inventory application designed to help administrators record and monitor incoming and outgoing materials at a building materials store.
+                </p>
+
+                <p class="mt-6 text-appleBlue font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Project <span aria-hidden="true">&rarr;</span>
+                </p>
+            </div>
+
+            <!-- Frontend Project Ticket Concert -->
+            <div onclick="openModal('modal-tiket')" class="bg-white p-10 rounded-[24px] border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 cursor-pointer group">
+                <span class="text-xs font-bold text-appleBlue uppercase tracking-wider">
+                    FRONT-END DEVELOPMENT
+                </span>
+
+                <h3 class="text-2xl font-bold mt-3 mb-2 text-appleDark group-hover:text-appleBlue transition-colors">
+                    Digital Concert Ticketing Platform
+                </h3>
+
+                <p class="text-gray-500 line-clamp-2">
+                    An interactive website interface designed to simplify and streamline the online ticket booking process for entertainment events.
+                </p>
+
+                <p class="mt-6 text-appleBlue font-medium text-sm flex items-center gap-1 group-hover:gap-2 transition-all">
+                    View Project <span aria-hidden="true">&rarr;</span>
+                </p>
+            </div>
         </div>
     </section>
 
 
     <!-- ================= MODAL / POPUP SECTION ================= -->
-
-
     <!-- Digital Guest Book Modal -->
     <div id="modal-bukutamu" class="hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-
         <div class="bg-white rounded-[24px] max-w-2xl w-full p-10 relative shadow-2xl transform scale-95 transition-transform duration-300">
-
             <!-- Close Button -->
             <button onclick="closeModal('modal-bukutamu')" class="absolute top-6 right-6 text-gray-400 hover:text-black bg-gray-100 p-2 rounded-full transition-colors">
-
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
-
-
             <h3 class="text-3xl font-bold text-appleDark mb-6">
                 Digital Guest Book
             </h3>
-
-
             <div class="space-y-6 text-gray-600">
-
                 <!-- Overview -->
                 <div>
                     <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
                         Project Overview
                     </h4>
-
                     <p>
                         The Digital Guest Book is an interactive web application designed to digitally record visitor information and messages.
                         It features a user-friendly form for visitors to submit their name, email, and message, along with a guest entry table that displays submitted data in real time.
                         Each entry is automatically recorded with a timestamp showing the date and time of submission.
                     </p>
                 </div>
-
-
                 <!-- Motivation -->
                 <div>
                     <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
                         Why I Built It
                     </h4>
-
                     <p>
                         Traditional guest books that rely on physical records can be inefficient, difficult to search, and vulnerable to data loss or damage.
                         This project was developed to digitize the guest registration process, making visitor records more organized, centralized, and accessible while providing a more modern user experience.
                     </p>
                 </div>
-
-
                 <!-- Tech Stack -->
                 <div>
                     <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
                         Tech Stack & Tools
                     </h4>
-
                     <div class="flex flex-wrap gap-2 mt-2">
-
                         <span class="bg-blue-50 text-appleBlue px-3 py-1 rounded-full text-sm font-medium">
                             HTML / CSS
                         </span>
-
                         <span class="bg-blue-50 text-appleBlue px-3 py-1 rounded-full text-sm font-medium">
                             PHP
                         </span>
-
                         <span class="bg-blue-50 text-appleBlue px-3 py-1 rounded-full text-sm font-medium">
                             MySQL
                         </span>
-
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
-
-
     <!-- Campus Clinic Information System Modal -->
     <div id="modal-poliklinik" class="hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
-
         <div class="bg-white rounded-[24px] max-w-2xl w-full p-10 relative shadow-2xl transform scale-95 transition-transform duration-300">
-
             <!-- Close Button -->
             <button onclick="closeModal('modal-poliklinik')" class="absolute top-6 right-6 text-gray-400 hover:text-black bg-gray-100 p-2 rounded-full transition-colors">
-
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
             </button>
-
-
             <h3 class="text-3xl font-bold text-appleDark mb-6">
                 Campus Clinic Information System
             </h3>
-
-
             <div class="space-y-6 text-gray-600">
-
                 <!-- Overview -->
                 <div>
                     <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
                         Project Overview
                     </h4>
-
                     <p>
                         The Campus Clinic Information System is a web-based application designed to support the management of healthcare services within a university environment.
                         The system provides comprehensive database management functionality, including patient registration, examination scheduling, and digital medical record management.
                     </p>
                 </div>
-
-
                 <!-- Motivation -->
                 <div>
                     <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
                         Why I Built It
                     </h4>
-
                     <p>
                         Manual healthcare administration can slow down service processes and make it difficult to manage and track patient records.
                         This project was developed to digitize clinic operations, making administrative workflows more efficient, structured, and easier to manage.
                         It also served as a practical implementation of relational database design and CRUD operations for managing dynamic operational data.
                     </p>
                 </div>
-
-
                 <!-- Tech Stack -->
                 <div>
                     <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
                         Tech Stack & Tools
                     </h4>
-
                     <div class="flex flex-wrap gap-2 mt-2">
-
                         <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
                             HTML / CSS
                         </span>
-
                         <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
                             PHP
                         </span>
-
                         <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
                             MySQL
                         </span>
-
                         <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
                             JavaScript
                         </span>
-
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Digital Pencatatan Barang -->
+    <div id="modal-pencatatan" class="hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-10 relative shadow-2xl transform scale-95 transition-transform duration-300">
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-pencatatan')" class="absolute top-6 right-6 text-gray-400 hover:text-black bg-gray-100 p-2 rounded-full transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <h3 class="text-3xl font-bold text-appleDark mb-6">
+                Material Stock Management System
+            </h3>
+            <div class="space-y-6 text-gray-600">
+                <!-- Overview -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Project Overview
+                    </h4>
+                    <p>
+                        A web-based inventory management information system designed to support daily operations at a building materials store. The application helps administrators manage material stock records and document incoming and outgoing inventory transactions, with all data stored in a centralized relational database.
+                    </p>
+                </div>
+                <!-- Motivation -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Why I Built It
+                    </h4>
+                    <p>
+                        Manual inventory tracking can be prone to data discrepancies caused by human error and can make the stock-taking process less efficient. This system was developed to help digitize the administrator's workflow, making inventory records more organized, accurate, and easier to manage.
+                        This project also served as a practical implementation of database design and CRUD operations to address a real-world business need.
+                    </p>
+                </div>
+                <!-- Tech Stack -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Tech Stack & Tools
+                    </h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            HTML / CSS
+                        </span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            PHP
+                        </span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            MySQL
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Digital Concert Ticketing Platform Modal -->
+    <div id="modal-tiket" class="hidden fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 opacity-0 transition-opacity duration-300">
+        <div class="bg-white rounded-[24px] max-w-2xl w-full p-10 relative shadow-2xl transform scale-95 transition-transform duration-300">
+            <!-- Close Button -->
+            <button onclick="closeModal('modal-tiket')" class="absolute top-6 right-6 text-gray-400 hover:text-black bg-gray-100 p-2 rounded-full transition-colors">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+            <h3 class="text-3xl font-bold text-appleDark mb-6">
+                Digital Concert Ticketing Platform
+            </h3>
+            <div class="space-y-6 text-gray-600">
+                <!-- Overview -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Project Overview
+                    </h4>
+                    <p>
+                        An interactive web interface developed to simulate the process of purchasing concert tickets online. This project focused on front-end development, designing a user flow that guides users through selecting ticket categories and quantities, entering personal information, and viewing a checkout summary with dynamic interactions.
+                    </p>
+                </div>
+                <!-- Motivation -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Why I Built It
+                    </h4>
+                    <p>
+                        Online concert ticket purchasing requires a fast, clear, and straightforward process so users can secure their desired tickets without unnecessary confusion. This project was designed to address the challenges of digital ticket booking by creating a smooth and intuitive purchasing interface.
+                        JavaScript was extensively implemented to handle interactive functionality, including buyer form validation and real-time ticket price calculations without requiring a page reload. This resulted in a more responsive and seamless user experience.
+                    </p>
+                </div>
+                <!-- Tech Stack -->
+                <div>
+                    <h4 class="text-sm font-bold text-appleDark uppercase tracking-wider mb-2">
+                        Tech Stack & Tools
+                    </h4>
+                    <div class="flex flex-wrap gap-2 mt-2">
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            HTML / CSS
+                        </span>
+                        <span class="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">
+                            JavaScript
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -275,7 +366,6 @@
             <h2 class="text-4xl font-bold tracking-tight mb-16 text-appleDark">
                 Skills
             </h2>
-
             <!-- Flex Container: justify-center memastikan baris yang tidak penuh tetap di tengah -->
             <div class="flex flex-wrap justify-center gap-6 md:gap-8">
 
